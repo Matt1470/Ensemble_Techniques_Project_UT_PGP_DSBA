@@ -10,54 +10,56 @@
 - [🤖 Machine Learning Models](#-machine-learning-models)  
 - [🎯 Model Evaluation & Insights](#-model-evaluation--insights)  
 - [🚀 Future Work & Deployment](#-future-work--deployment)  
-- [📄 Contributors](#-contributors)  
+- [📄 Author](#-author)  
 - [🙌 Acknowledgments](#-acknowledgments)  
 
 ---
 
 ## 📌 Project Overview  
-The **EasyVisa Project** is a **machine learning-powered solution** aimed at streamlining the U.S. visa approval process.  
-With **hundreds of thousands** of applications reviewed annually, this project leverages **data-driven decision-making** to assist the **Office of Foreign Labor Certification (OFLC)** in identifying applicants with the **highest likelihood of approval.**  
+The **EasyVisa Project** is a **machine learning-based decision-support system** designed to assist the **Office of Foreign Labor Certification (OFLC)** in **streamlining the U.S. visa approval process**.  
+
+With the **growing demand for foreign workers** and **hundreds of thousands** of applications processed annually, a **data-driven solution** can significantly improve efficiency, reduce workload, and ensure **fairer, faster decision-making**.  
 
 ### 🔍 **How Does It Work?**  
-✔ **Analyzes historical visa application data** to extract key patterns.  
-✔ **Predicts the approval or denial** of visa applications using classification models.  
-✔ **Identifies key factors** that influence the decision-making process.  
+✔ **Uses historical visa application data** to uncover key trends and patterns.  
+✔ **Applies machine learning models** to classify visa applications as **Certified (Approved)** or **Denied**.  
+✔ **Identifies the most influential factors** affecting visa approval.  
 
 ---
 
 ## ❓ Problem Statement  
 ### **Context**  
-The **U.S. workforce** depends on both **domestic and foreign** professionals.  
-- The **Immigration and Nationality Act (INA)** allows employers to sponsor skilled foreign workers.  
-- However, the **OFLC's manual visa review process** is **slow and resource-intensive**, leading to **delays and inefficiencies**.  
+The **Immigration and Nationality Act (INA)** allows U.S. employers to hire foreign talent. However, the **OFLC's manual review process** is:  
+- **Slow** 🚶 → High application volume causes processing delays.  
+- **Inconsistent** ⚖️ → Subjectivity in decisions may lead to **bias**.  
+- **Resource-Intensive** 🏗️ → Requires substantial human oversight.  
 
 ### **Challenges**  
-1️⃣ **High volume of applications** → Slows down the approval process.  
-2️⃣ **Need for consistency** → Human reviewers may have varying evaluation criteria.  
-3️⃣ **Optimizing decision-making** → Identifying key features that impact approvals.  
+1️⃣ **High application volume** → Causes bottlenecks in processing.  
+2️⃣ **Lack of consistency** → Decision-making can be subjective.  
+3️⃣ **Key approval factors unknown** → Employers and applicants lack transparency.  
 
 ---
 
 ## 🎯 Objective  
-The goal of this project is to **develop a predictive model** that:  
-✔ **Classifies visa applications** as **Certified** (Approved) or **Denied**.  
-✔ **Highlights key variables** influencing the decision-making process.  
-✔ **Provides a scalable and automated solution** for visa approvals.  
+This project aims to develop a **machine learning model** that:  
+✔ **Accurately predicts** visa approval or denial.  
+✔ **Identifies key approval factors** for better policy-making.  
+✔ **Enhances decision efficiency** for the OFLC.  
 
 ---
 
 ## 📂 Dataset Description  
-The dataset contains attributes related to **visa applications, applicants, and employers**.  
+The dataset includes information on **applicants, employers, and job roles**.  
 
 ### **Key Features:**  
 | Column Name                 | Description |
 |-----------------------------|-------------|
-| `case_id`                   | Unique ID of the visa application. |
+| `case_id`                   | Unique ID for each visa application. |
 | `continent`                 | Applicant’s continent of origin. |
 | `education_of_employee`      | Applicant’s education level. |
 | `has_job_experience`         | Prior work experience (Y/N). |
-| `requires_job_training`      | Whether training is required (Y/N). |
+| `requires_job_training`      | Whether the job requires training (Y/N). |
 | `no_of_employees`           | Employer’s company size. |
 | `yr_of_estab`               | Year the employer was established. |
 | `region_of_employment`      | U.S. region of employment. |
@@ -72,26 +74,26 @@ The dataset contains attributes related to **visa applications, applicants, and 
 
 ## 🛠 Project Structure  
 ### **1️⃣ Data Preprocessing**  
-✔ Handle **missing values**  
-✔ Convert **data types**  
-✔ Perform **feature engineering**  
+✔ Handled **missing values**  
+✔ Converted **data types**  
+✔ Applied **feature engineering**  
 
 ### **2️⃣ Exploratory Data Analysis (EDA)**  
-✔ **Visualizing feature distributions**  
-✔ **Checking correlations** between features  
-✔ **Class imbalance analysis**  
+✔ Visualized **feature distributions**  
+✔ Examined **correlations between key factors**  
+✔ Addressed **class imbalance in visa approvals**  
 
 ### **3️⃣ Machine Learning Model Development**  
 ✔ Split data into **Training & Testing sets**  
-✔ Train multiple **classification models**:  
+✔ Trained multiple **classification models**:  
    - Decision Tree 🌳  
-   - Random Forest 🌲🌲  
+   - Random Forest 🌲  
    - Gradient Boosting 🚀  
    - XGBoost ⚡  
 
 ### **4️⃣ Model Optimization & Evaluation**  
-✔ Perform **hyperparameter tuning** (GridSearchCV)  
-✔ Evaluate **accuracy, precision, recall, and F1-score**  
+✔ Performed **hyperparameter tuning** (GridSearchCV)  
+✔ Evaluated performance using **accuracy, precision, recall, and F1-score**  
 
 ### **5️⃣ Future Deployment (Next Phase)**  
 ✔ API for **real-time visa predictions**  
@@ -100,11 +102,12 @@ The dataset contains attributes related to **visa applications, applicants, and 
 ---
 
 ## 📊 Exploratory Data Analysis (EDA)  
-**Key Findings:**  
-- 🔹 **Education level & job experience** strongly influence visa approval.  
-- 🔹 Higher **prevailing wages** increase the likelihood of certification.  
-- 🔹 The **region of employment** also plays a significant role.  
-- 🔹 Certain industries and company sizes have **higher approval rates**.  
+### **Key Findings:**  
+- 🎓 **Higher education levels** significantly improve visa approval chances.  
+- 💼 **Work experience** plays a **major role** in certification likelihood.  
+- 💰 **Higher wages** lead to **increased approval rates**.  
+- 🏢 **Larger companies** (more employees) have **higher visa approval rates**.  
+- 🌍 **Employment region matters** → Some U.S. regions approve more visas than others.  
 
 ---
 
@@ -121,29 +124,29 @@ The dataset contains attributes related to **visa applications, applicants, and 
 ---
 
 ## 🎯 Model Evaluation & Insights  
-✔ **XGBoost outperformed other models**, making it the best choice for deployment.  
-✔ **Top factors impacting visa approval:**  
+✔ **XGBoost outperformed all other models** and is the best candidate for deployment.  
+✔ **Key approval factors identified:**  
    - 🎓 **Education Level**  
    - 💼 **Job Experience**  
    - 💰 **Prevailing Wage**  
    - 🏢 **Company Size**  
 
-📢 **Recommendation:** Employers & applicants should optimize these factors for a higher chance of visa approval.  
+📢 **Recommendation:** Employers & applicants should focus on these factors to **increase visa approval chances**.  
 
 ---
 
 ## 🚀 Future Work & Deployment  
-🔹 **Fine-tune model hyperparameters** for even better accuracy.  
-🔹 **Deploy as an API** for real-time visa application assessments.  
-🔹 **Create an interactive dashboard** for policymakers & HR teams.  
-🔹 **Expand the dataset** to include more application years.  
+🔹 **Further fine-tuning of hyperparameters** for improved accuracy.  
+🔹 **Deployment via API** for real-time decision support.  
+🔹 **Development of an interactive dashboard** for policymakers.  
+🔹 **Integration with historical visa trends** to improve predictions.  
 
 ---
 
 ## 📄 Author  
 👤 **Matthew Cook**  
 📧 Email: matthewcook755@gmail.com  
-🔗 LinkedIn: [Here](https://www.linkedin.com/in/matthew-cook-4a92627a/)  
+🔗 LinkedIn: [Matthew Cook](https://www.linkedin.com/in/matthew-cook-4a92627a/)  
 
 ---
 
@@ -151,6 +154,7 @@ The dataset contains attributes related to **visa applications, applicants, and 
 - **Office of Foreign Labor Certification (OFLC)**  
 - **U.S. Immigration and Nationality Act (INA)**  
 - **Data Science & Machine Learning Community**  
+
 
 ---
 
