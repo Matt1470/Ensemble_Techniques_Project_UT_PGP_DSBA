@@ -140,8 +140,10 @@ The dataset contains attributes related to **visa applications, applicants, and 
 
 ---
 
-## 📄 Contributors  
-👤 **Matthew Cook** - Data Scientist, EasyVisa  
+## 📄 Author  
+👤 **Matthew Cook**  
+📧 Email: matthewcook755@gmail.com  
+🔗 LinkedIn: [Here](https://www.linkedin.com/in/matthew-cook-4a92627a/)  
 
 ---
 
